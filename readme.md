@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/mtvbrianking/laravel-package-boilerplate.svg?branch=master)](https://travis-ci.org/mtvbrianking/laravel-package-boilerplate)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/?branch=master)
-[![StyleCI](https://github.styleci.io/repos/230489612/shield?branch=master)](https://github.styleci.io/repos/230489612)
+[![StyleCI](https://github.styleci.io/repos/230607368/shield?branch=master)](https://github.styleci.io/repos/230607368)
 [![Documentation](https://img.shields.io/badge/Documentation-Blue)](https://mtvbrianking.github.io/laravel-package-boilerplate)
 
 ### [Installation](https://packagist.org/packages/bmatovu/laravel-package-boilerplate)
@@ -28,9 +28,7 @@ composer dump-autoload
 
 You need to download [sami](https://github.com/FriendsOfPHP/Sami) for document generation.
 
-If you need auto document generation remotely, uncomment the documentation step in `travis.yml`.
-
-And add a `Github token` for authorization.
+To auto deploy documentation; be sure to add a [`Github token`](https://github.com/settings/tokens) for authorization.
 
 ```
 curl -O http://get.sensiolabs.org/sami.phar
@@ -52,10 +50,12 @@ $ php-cs-fixer fix
 
 You may publish your package via [Packagist](#)
 
+## Testing
+
+We've defaulted to [Orchestra's testbench](https://github.com/orchestral/testbench)
+
 ## Useful resource
 
 - [Laravel Package Development](https://laravel.com/docs/master/packages)
 
-## Testing
-
-We've defaulted to [Orchestra's testbench](https://github.com/orchestral/testbench)
+- [Travis CI + GitHub Pages - Automated deployment](https://www.youtube.com/watch?v=BFpSD2eoXUk)

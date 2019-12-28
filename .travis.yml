@@ -21,29 +21,29 @@ jobs:
       script:
         - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
-    # - stage: deploy
+    - stage: deploy
 
-    #   name: "Documentation"
+      name: "Documentation"
 
-    #   php: 7.2
+      php: 7.2
 
-    #   before_script:
-    #     - git clone https://github.com/mtvbrianking/laravel-api-filters.git
+      before_script:
+        - git clone https://github.com/mtvbrianking/laravel-package-boilerplate.git
 
-    #   install:
-    #     - curl -O http://get.sensiolabs.org/sami.phar
+      install:
+        - curl -O http://get.sensiolabs.org/sami.phar
 
-    #   script:
-    #    - php sami.phar update .sami.dist
+      script:
+       - php sami.phar update .sami.dist
 
-    #   # https://docs.travis-ci.com/user/deployment/pages/
-    #   deploy:
-    #     provider: pages
-    #     skip-cleanup: true
-    #     github-token: $GITHUB_TOKEN
-    #     local_dir: docs
-    #     on:
-    #       branch: master
+      # https://docs.travis-ci.com/user/deployment/pages/
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN
+        local_dir: docs
+        on:
+          branch: master
 
 # https://docs.travis-ci.com/user/notifications
 notifications:
