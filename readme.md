@@ -11,7 +11,7 @@
 Install via Composer package manager:
 
 ```bash
-composer create-project --prefer-dist bmatovu/laravel-package-boilerplate my-package
+composer create-project --prefer-source --remove-vcs bmatovu/laravel-package-boilerplate hello-world
 ```
 
 ### Step #1: Own the package
@@ -42,8 +42,8 @@ Also added [Scrutinizer CI](https://scrutinizer-ci.com) configurations for code 
 
 Locally, you can restort to [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer).
 
-```
-$ php-cs-fixer fix
+```bash
+php-cs-fixer fix
 ```
 
 ### Step #4: Sharing the package
