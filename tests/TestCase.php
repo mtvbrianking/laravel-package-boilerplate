@@ -7,31 +7,30 @@ use Orchestra\Testbench\TestCase as Orchestra;
 abstract class TestCase extends Orchestra
 {
     /**
-     * Add package service provider
+     * Add package service provider.
      *
      * @param \Illuminate\Foundation\Application $app
+     *
      * @return array
      */
     protected function getPackageProviders($app)
     {
         return [
-            HelloWorldServiceProvider::class
+            HelloWorldServiceProvider::class,
         ];
     }
 
     /**
-     * Define environment setup.
+     * Get package aliases.
      *
-     * @param \Illuminate\Foundation\Application $app
-     * @return void
+     * @param  \Illuminate\Foundation\Application  $app
+     *
+     * @return array
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getPackageAliases($app)
     {
-        $app['config']->set('database.default', 'testing');
-        $app['config']->set('database.connections.testing', [
-            'driver' => 'sqlite',
-            'database' => ':memory:',
-            'prefix' => '',
-        ]);
+        return [
+            'HelloWorld' => 'Bmatovu\HelloWorld\HelloWorldFacade',
+        ];
     }
 }

@@ -23,6 +23,8 @@ class HelloWorldServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // ...
+        $this->app->bind('hello-world', function () {
+            return new HelloWorld();
+        });
     }
 }
