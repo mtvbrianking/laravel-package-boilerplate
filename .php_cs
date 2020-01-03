@@ -4,40 +4,65 @@
 
 $rules = [
     '@PSR2' => true,
-    'array_syntax' => ['syntax' => 'short'],
+
+    // Arrays
+    'array_syntax' => [
+        'syntax' => 'short',
+    ],
+    'trim_array_spaces' => true,
+    'no_whitespace_before_comma_in_array' => true,
+    'whitespace_after_comma_in_array' => true,
     'no_trailing_comma_in_singleline_array' => true,
-    'multiline_whitespace_before_semicolons' => [
-        'strategy' => 'no_multi_line',
-    ],
-    'no_singleline_whitespace_before_semicolons' => true,
-    'blank_line_before_statement' => [
-        'statements' => ['return']
-    ],
+    'trailing_comma_in_multiline_array' => true,
+    'not_operator_with_successor_space' => true,
+
+    // General
+    'indentation_type' => true,
+    'single_quote' => true,
+    'no_unused_imports' => true,
+    'no_useless_else' => true,
+    'no_useless_return' => true,
+    'no_extra_blank_lines' => true,
+    'no_whitespace_in_blank_line' => true,
+    'linebreak_after_opening_tag' => true,
+    'no_blank_lines_after_class_opening' => true,
+    'no_blank_lines_after_phpdoc' => true,
+    'cast_spaces' => true,
     'concat_space' => [
         'spacing' => 'none',
     ],
-    'no_short_echo_tag' => true,
-    'no_unused_imports' => true,
-    'not_operator_with_successor_space' => true,
-    'no_useless_else' => true,
+    'blank_line_before_statement' => true,
+    'method_chaining_indentation' => true,
     'ordered_imports' => [
-        'sortAlgorithm' => 'alpha',
+        'sort_algorithm' => 'alpha',
     ],
-    'phpdoc_add_missing_param_annotation' => true,
+    'single_line_comment_style' => [
+        'comment_types' => [
+            'hash',
+        ],
+    ],
+    'return_type_declaration' => [
+        'space_before' => 'none',
+    ],
+
+    // Docs
+    'phpdoc_types' => true,
     'phpdoc_indent' => true,
-    'phpdoc_no_package' => true,
-    'phpdoc_order' => true,
-    'phpdoc_separation' => true,
-    'phpdoc_single_line_var_spacing' => true,
-    'phpdoc_trim' => true,
-    'phpdoc_var_without_name' => true,
     'phpdoc_to_comment' => true,
+    'phpdoc_trim' => true,
+    'phpdoc_align' => true,
     'phpdoc_summary' => true,
-    'single_quote' => true,
-    'single_line_comment_style' => true,
-    'ternary_operator_spaces' => true,
-    'trailing_comma_in_multiline_array' => true,
-    'trim_array_spaces' => true,
+    'phpdoc_separation' => true,
+    'phpdoc_scalar' => true,
+    'phpdoc_order' => true,
+    'phpdoc_inline_tag' => true,
+    'phpdoc_return_self_reference' => true,
+    'phpdoc_var_without_name' => true,
+    'phpdoc_var_annotation_correct_order' => true,
+    'phpdoc_trim_consecutive_blank_line_separation' => true,
+    'phpdoc_add_missing_param_annotation' => [
+        'only_untyped' => false,
+    ],
 ];
 
 $excludes = [
