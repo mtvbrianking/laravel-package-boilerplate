@@ -5,6 +5,8 @@ namespace Bmatovu\HelloWorld;
 use Illuminate\Support\Facades\Facade;
 
 /**
+ * @method static string greet(string $person = 'World')
+ *
  * @see \Bmatovu\HelloWorld\HelloWorld
  */
 class HelloWorldFacade extends Facade
