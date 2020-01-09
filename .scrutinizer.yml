@@ -7,19 +7,23 @@ filter:
     - "docs/"
     - "tests/"
 
+# Tessts
 # https://scrutinizer-ci.com/docs/configuration/build_reference
-build:
-  environment:
-    php:
-      version: '7.2'
-  requires:
-    - branch: master
+
+# build:
+#   environment:
+#     php:
+#       version: '7.2'
+#   requires:
+#     - branch: master
 #   nodes:
 #     analysis:
 #       tests:
 #         override:
 #           - php-scrutinizer-run
 
+# Analysis
 # https://scrutinizer-ci.com/docs/tools/external-code-coverage/
+
 tools:
   external_code_coverage: true
