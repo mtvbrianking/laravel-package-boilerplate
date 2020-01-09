@@ -1,3 +1,4 @@
+# Code style
 # https://scrutinizer-ci.com/docs/reviews/configure_automated_checks
 checks:
   php: true
