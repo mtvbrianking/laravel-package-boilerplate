@@ -28,3 +28,8 @@ filter:
 
 tools:
   external_code_coverage: true
+
+# Code Style
+# https://scrutinizer-ci.com/docs/configuration/coding_style
+
+coding_style:
