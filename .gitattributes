@@ -1,9 +1,6 @@
 # Path-based git attributes
 # https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
 
-/coverage           export-ignore
-/docs               export-ignore
-
 # Uncomment the lines below for your package; 
 # These are basically files you don't want in a release.
 
