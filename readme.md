@@ -52,6 +52,8 @@ php-cs-fixer fix
 
 You may publish your package via [Packagist](#)
 
+Remember to update `.gitattributes` to exempt some files from releases.
+
 ## Testing
 
 We've defaulted to [Orchestra's testbench](https://github.com/orchestral/testbench)
