@@ -11,34 +11,36 @@
 Install via Composer package manager:
 
 ```bash
-composer create-project --prefer-source --remove-vcs bmatovu/laravel-package-boilerplate hello-world
+composer create-project --prefer-dist bmatovu/laravel-package-boilerplate hello-world
 ```
 
 ### Step #1: Own the package
 
 Update the `composer.json` file to match your credentials.
 
-Update the namespaces to match those you've set via composer.
+Change the namespaces to match those you're using in `src`.
+
+Change the type from `project` to `library`
 
 ```bash
 composer dump-autoload
 ```
 
-### Step #2: Documentation
+### Step #2: Source code documentation
 
-You need to download [sami](https://github.com/FriendsOfPHP/Sami) for document generation.
+You need to download [Sami](https://github.com/FriendsOfPHP/Sami) for source code documentation.
 
-To auto deploy documentation; be sure to add a [`Github token`](https://github.com/settings/tokens) for authorization.
-
-```
+```bash
 curl -O http://get.sensiolabs.org/sami.phar
 ```
 
+To auto deploy documentation; be sure to add a [`Github token`](https://github.com/settings/tokens) for authorization.
+
 ### Step #3: Code Style & Quality
 
-We've added [Style CI](https://styleci.io) configurations with the Laravel present to get you starter.
+We've added [StyleCI](https://styleci.io) configurations with the Laravel present to get you started.
 
-Also added [Scrutinizer CI](https://scrutinizer-ci.com) configurations for code quality, test coverage inspection.
+Also added [ScrutinizerCI](https://scrutinizer-ci.com) configurations for code quality, test coverage inspection.
 
 Locally, you can restort to [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer).
 
