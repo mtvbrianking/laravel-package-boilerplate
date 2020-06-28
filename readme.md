@@ -60,6 +60,8 @@ We've defaulted to [Orchestra's testbench](https://github.com/orchestral/testben
 
 ## Useful resource
 
-- [Laravel Package Development](https://laravel.com/docs/master/packages)
+- [Laravel Package Development](https://laravelpackage.com)
+
+- [Laravel Package Development - Official](https://laravel.com/docs/master/packages)
 
 - [Travis CI + GitHub Pages - Automated deployment](https://www.youtube.com/watch?v=BFpSD2eoXUk)
