@@ -14,6 +14,10 @@ Install via Composer package manager:
 composer create-project --prefer-dist bmatovu/laravel-package-boilerplate hello-world
 ```
 
+Alternatively, generate a Github repository using the `Use this template` call to action button or the link below...
+
+> https://github.com/mtvbrianking/laravel-package-boilerplate/generate
+
 ### Step #1: Own the package
 
 Update the `composer.json` file to match your credentials.
