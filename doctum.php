@@ -7,7 +7,7 @@ use Doctum\RemoteRepository\GitHubRemoteRepository;
 use Doctum\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
 
-$dir = __DIR__ . '/src';
+$dir = __DIR__.'/src';
 
 $iterator = Finder::create()
     ->files()
@@ -29,8 +29,8 @@ $options = [
     'theme' => 'default',
     'versions' => $versions,
     'title' => 'Laravel Package Boilerplate',
-    'build_dir' => __DIR__ . '/docs',
-    'cache_dir' => __DIR__ . '/docs/cache',
+    'build_dir' => __DIR__.'/docs',
+    'cache_dir' => __DIR__.'/docs/cache',
     'remote_repository' => $repo,
     'default_opened_level' => 3,
 ];
