@@ -8,7 +8,7 @@
 
 ### [Installation](https://packagist.org/packages/bmatovu/laravel-package-boilerplate)
 
-Install via Composer package manager:
+Install via composer package manager:
 
 ```bash
 composer create-project --prefer-dist bmatovu/laravel-package-boilerplate hello-world
@@ -18,7 +18,7 @@ Alternatively, generate a Github repository using the `Use this template` call t
 
 > https://github.com/mtvbrianking/laravel-package-boilerplate/generate
 
-### Step #1: Own the package
+### Own the package
 
 Update the `composer.json` file to match your credentials.
 
@@ -30,17 +30,15 @@ Change the type from `project` to `library`
 composer dump-autoload
 ```
 
-### Step #2: Source code documentation
+## Testing
 
-You need to download [Sami](https://github.com/FriendsOfPHP/Sami) for source code documentation.
+We've defaulted to [Orchestra's testbench](https://github.com/orchestral/testbench)
 
 ```bash
-curl -O http://get.sensiolabs.org/sami.phar
+composer test
 ```
 
-To auto deploy documentation; be sure to add a [`Github token`](https://github.com/settings/tokens) for authorization.
-
-### Step #3: Code Style & Quality
+### Code Style & Quality
 
 We've added [StyleCI](https://styleci.io) configurations with the Laravel present to get you started.
 
@@ -49,23 +47,27 @@ Also added [ScrutinizerCI](https://scrutinizer-ci.com) configurations for code q
 Locally, you can restort to [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer).
 
 ```bash
-php-cs-fixer fix
+composer cs-fix
 ```
 
-### Step #4: Sharing the package
+### Source code documentation
 
-You may publish your package via [Packagist](#)
+You need to download [Doctum](https://github.com/code-lts/doctum) for source code documentation.
 
-Remember to update `.gitattributes` to exempt some files from releases.
+```bash
+composer doc
+```
 
-## Testing
+To auto deploy documentation; be sure to add a [`Github token`](https://github.com/settings/tokens) for authorization.
 
-We've defaulted to [Orchestra's testbench](https://github.com/orchestral/testbench)
+### Sharing the package
 
-## Useful resource
+You may share your package via [Packagist](packagist.org)
 
-- [Laravel Package Development](https://laravelpackage.com)
+## Useful resources
 
-- [Laravel Package Development - Official](https://laravel.com/docs/master/packages)
+- [Laravel Package Development - Blog](https://laravelpackage.com)
+
+- [Laravel Package Development - Documentation](https://laravel.com/docs/master/packages)
 
 - [Travis CI + GitHub Pages - Automated deployment](https://www.youtube.com/watch?v=BFpSD2eoXUk)

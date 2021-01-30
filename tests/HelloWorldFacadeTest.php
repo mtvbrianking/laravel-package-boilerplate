@@ -2,7 +2,7 @@
 
 namespace Bmatovu\HelloWorld\Tests;
 
-use HelloWorld;
+use Bmatovu\HelloWorld\HelloWorldFacade as HelloWorld;
 
 class HelloWorldFacadeTest extends TestCase
 {
